@@ -97,7 +97,7 @@ public final class PersonWarehouse implements Iterable<Person> {
      * @return Stream of all Aliases
      */ // TODO
     public Stream<String> getAllAliases() {
-        return getNestedAliases().flatMap(Function.identity());
+        return getNestedAliases().flatMap(i -> i);
     }
 
     // DO NOT MODIFY
